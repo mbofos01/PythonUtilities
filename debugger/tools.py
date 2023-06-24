@@ -2,7 +2,7 @@
 
 import time
 
-def show_information(debug):
+def show_information(debug=True):
     def decorator(func):
         def wrapper(*args):
             if debug:

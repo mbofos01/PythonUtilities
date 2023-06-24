@@ -1,15 +1,16 @@
 from debugger.tools import show_information
 
-@show_information(True)
+@show_information()
 def casa(re,rea=12):
     print(f"hello world ({re}) ")
     return 1
 
-@show_information(debug = False)
+@show_information()
 def plaza(re,te):
+    casa(2,5)
+
     print(f"hello world ({re} , {te})")
 
 
-casa(2)
-plaza(2,5)
+plaza(2,3)
 
