@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
 import time
+try:
+    import pretty_errors
+except:
+    print("-- Pretty Errors is not installed --")
 
 def show_information(debug=True):
     def decorator(func):
@@ -24,8 +28,8 @@ def show_information(debug=True):
                 print(f"Function '{func.__name__}' took {execution_time} seconds to execute.")
                 print("---------------------------------------------------------\n")
             else:
-                func(*args)
-            return args
+                output = func(*args)
+            return output
         return  wrapper
     return decorator
 
@@ -34,6 +38,7 @@ def show_information(debug=True):
 def showMe(test1,test2):
     print(test1)
     print(test2)
+    raise Exception
     return test1 + test2
 
 if __name__ == '__main__':
