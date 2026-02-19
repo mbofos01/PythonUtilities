@@ -1,3 +1,5 @@
 
 *.pyc
 *\__pycache__
+debugger_decorator.egg-info\*
+dist\*
