@@ -1,7 +1,10 @@
+import time
+
 from debugger.tools import show_information
 
 @show_information()
 def casa(re,rea=12):
+    time.sleep(2)
     print(f"hello world ({re}) ")
     return 1
 
@@ -26,3 +29,5 @@ def add_numbers(a, b):
 
 
 add_numbers(1,3)
+
+casa(1)
