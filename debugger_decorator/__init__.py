@@ -4,10 +4,7 @@ import time
 import inspect
 
 from colorama import Back
-try:
-    import pretty_errors
-except:
-    print("-- Pretty Errors is not installed --")
+import pretty_errors
 
 try:
     from colorama import Fore, Style, init
@@ -37,7 +34,7 @@ def colorize(text, color):
 
 def _get_caller_info():
     """Get information about the caller of the decorated function."""
-    caller_frame = inspect.stack()[1]
+    caller_frame = inspect.stack()[2]
     return f"was called from line {caller_frame.lineno} in {caller_frame.function}"
 
 

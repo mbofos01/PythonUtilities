@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "debugger-decorator"
-version = "0.1.1"
+version = "0.1.3"
 authors = [
   { name="Michail Panagiotis Bofos", email="mbofos@gmail.com" },
 ]
@@ -21,11 +21,12 @@ classifiers = [
 license = "MIT"
 license-files = ["LICENSE"]
 
-[project.urls]
-Homepage = "https://github.com/mbofos01/PythonUtilities"
+dependencies = [
+    "colorama",
+    "pretty_errors"
+]
 
-[project.optional-dependencies]
-pretty = ["pretty_errors"]
-colors = ["colorama"]
+[project.urls]
+Homepage = "https://github.com/mbofos01/debugger-decorator"
 
 [tool.setuptools.packages.find]
