@@ -1,23 +1,23 @@
-# Debugger Tools
+# Debugger Decorator
 
 A simple Python decorator for debugging functions.
 
 ## Installation
 
 ```bash
-pip install debugger-tools
+pip install debugger-decorator
 ```
 
 To include the optional `pretty_errors` dependency:
 
 ```bash
-pip install debugger-tools[pretty]
+pip install debugger-decorator[pretty]
 ```
 
 ## Usage
 
 ```python
-from debugger.tools import show_information
+from debugger_decorator import show_information
 
 @show_information()
 def my_function(a, b):

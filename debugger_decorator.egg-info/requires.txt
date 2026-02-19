@@ -1,0 +1,6 @@
+
+[colors]
+colorama
+
+[pretty]
+pretty_errors

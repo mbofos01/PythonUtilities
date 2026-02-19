@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: debugger-decorator
+Version: 0.1.1
+Summary: A comprehensive Python function debugger with colors and caller detection
+Author-email: Michail Panagiotis Bofos <mbofos@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/mbofos01/PythonUtilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: pretty
+Requires-Dist: pretty_errors; extra == "pretty"
+Provides-Extra: colors
+Requires-Dist: colorama; extra == "colors"
+Dynamic: license-file
+
+# Debugger Decorator
+
+A simple Python decorator for debugging functions.
+
+## Installation
+
+```bash
+pip install debugger-decorator
+```
+
+To include the optional `pretty_errors` dependency:
+
+```bash
+pip install debugger-decorator[pretty]
+```
+
+## Usage
+
+```python
+from debugger_decorator import show_information
+
+@show_information()
+def my_function(a, b):
+    return a + b
+
+my_function(1, 2)
+```
+
+This will print information about the function call, its arguments, return value, and execution time.

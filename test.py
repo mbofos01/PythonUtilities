@@ -1,6 +1,6 @@
 import time
 
-from debugger.tools import show_information
+from debugger_decorator import show_information
 
 @show_information()
 def casa(re,rea=12):
