@@ -1,9 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-debugger_decorator/__init__.py
-debugger_decorator.egg-info/PKG-INFO
-debugger_decorator.egg-info/SOURCES.txt
-debugger_decorator.egg-info/dependency_links.txt
-debugger_decorator.egg-info/requires.txt
-debugger_decorator.egg-info/top_level.txt
