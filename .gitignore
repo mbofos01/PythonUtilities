@@ -1,5 +1,7 @@
 
 *.pyc
-*\__pycache__
+*/__pycache__
 /dist
 /debugger_decorator.egg-info
+/.pytest_cache
+/.vscode
